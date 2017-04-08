@@ -14,6 +14,7 @@ app = Flask(__name__)
 PLAID_CLIENT_ID = plaid_keys['PLAID_CLIENT_ID']
 PLAID_SECRET = plaid_keys['PLAID_SECRET']
 PLAID_PUBLIC_KEY = plaid_keys['PLAID_PUBLIC_KEY']
+
 # Use 'sandbox' to test with Plaid's Sandbox environment (username: user_good,
 # password: pass_good)
 # Use `development` to test with live users and credentials and `production`
