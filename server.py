@@ -1,6 +1,7 @@
 import os
 import datetime
 import plaid
+from config import plaid_keys
 from flask import Flask
 from flask import render_template
 from flask import request
@@ -10,9 +11,9 @@ import json
 app = Flask(__name__)
 
 # Fill in your Plaid API keys - https://dashboard.plaid.com/account/keys
-PLAID_CLIENT_ID = '26589e9d24bdc6a44288ea16'
-PLAID_SECRET = '8c1b62ff97a74b569606bf268a0342'
-PLAID_PUBLIC_KEY = 'c7cdd689a66e5d80e3ef654bf6db1d'
+PLAID_CLIENT_ID = plaid_keys['PLAID_CLIENT_ID']
+PLAID_SECRET = plaid_keys['PLAID_SECRET']
+PLAID_PUBLIC_KEY = plaid_keys['PLAID_PUBLIC_KEY']
 # Use 'sandbox' to test with Plaid's Sandbox environment (username: user_good,
 # password: pass_good)
 # Use `development` to test with live users and credentials and `production`
